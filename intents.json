@@ -1,0 +1,18 @@
+{"intents":  [
+  {"tag":  "greeting",
+    "patterns": ["Hi", "Hello", "Hey"],
+    "responses": ["Hi, what can I do for you"]
+  },
+    {"tag":  "add_todo",
+    "patterns": ["I want to add a to do", "Create a to do task", "Add a new to do"],
+    "responses": [""]
+  },
+    {"tag":  "show_todo",
+    "patterns": ["Can you read me my to-do list", "What are my to-dos", "Read my to-dos"],
+    "responses": [""]
+  },
+    {"tag":  "end",
+    "patterns": ["Bye", "Thank you", "Stop"],
+    "responses": ["Goodbye"]
+  }
+]}
