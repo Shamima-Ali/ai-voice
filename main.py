@@ -39,15 +39,24 @@ def create_todo():
             speaker.runAndWait()
 
 
-
 def show_todos():
-    speaker.say("Here's what you've got in your to-do list")
     if todo_list:
+        speaker.say("Here's what you've got in your to-do list")
         for item in todo_list:
             speaker.say(item)
         speaker.runAndWait()
     else:
         speaker.say("Your todo list is empty")
+        speaker.runAndWait()
+
+
+def remove_todos():
+    if todo_list:
+        todo_list.clear()
+        speaker.say("Your todo list has been cleared")
+        speaker.runAndWait()
+    else:
+        speaker.say("There is nothing in your todo list")
         speaker.runAndWait()
 
 
@@ -64,6 +73,7 @@ training_map = {
     "greeting": start,
     "show_todo": show_todos,
     "add_todo": create_todo,
+    "clear_todo": remove_todos,
     "end": quit,
 }
 

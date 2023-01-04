@@ -11,6 +11,10 @@
     "patterns": ["Can you read me my to-do list", "What are my to-dos", "Read my to-dos"],
     "responses": [""]
   },
+    {"tag":  "clear_todo",
+    "patterns": ["Can you clear my to-do list", "Can you remove my to-do list", "Remove my to-dos"],
+    "responses": [""]
+  },
     {"tag":  "end",
     "patterns": ["Bye", "Thank you", "Stop"],
     "responses": ["Goodbye"]
